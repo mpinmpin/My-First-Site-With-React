@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Home = () => {
+const Counter = () => {
 
     const [counter, setCounter] = useState(0)
     
@@ -9,12 +9,11 @@ const Home = () => {
     }
 
     return ( 
-        <div className="home">
-            <h2>Homepage</h2>
+        <div>
             <p>You have clicked: {counter} times</p>
-            <button onClick={handleClick}>click here</button>
+            <button className="global-button" onClick={handleClick}>click here</button>
         </div>
      );
 }
  
-export default Home;
+export default Counter;

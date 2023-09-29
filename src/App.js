@@ -6,6 +6,7 @@ import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 import About from './About';
 import BlogsPage from './BlogsPage';
+import Counter from './Counter';
 
 function App() {
   
@@ -17,6 +18,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home/>
+            </Route>
+            <Route path="/counter">
+              <Counter/>
             </Route>
             <Route path="/blogspage">
               <BlogsPage/>

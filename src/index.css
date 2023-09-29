@@ -9,6 +9,15 @@
   color: rgb(255, 255, 255);
   background-color: rgb(31, 36, 43);
 }
+.global-button {
+  background: #9ACD32;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+}
 .navbar {
   padding: 20px;
   display: flex;

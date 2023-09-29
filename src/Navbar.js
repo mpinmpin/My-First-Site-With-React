@@ -7,8 +7,14 @@ const Navbar = () => {
                 <Link to="/"><h1>My First Site</h1></Link>
             </div>           
             <div className="links">
-                
-                <Link to="/">Simple Apps</Link>
+                <div className="dropdown">
+                    <button class="dropbtn">Simple Apps
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <Link to="/counter">Simple Counter</Link>
+                    </div>
+                </div>
                 <div className="dropdown">
                     <button class="dropbtn">Blogs
                         <i class="fa fa-caret-down"></i>
