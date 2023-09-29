@@ -9,7 +9,7 @@
   color: rgb(255, 255, 255);
   background-color: rgb(31, 36, 43);
 }
-.global-button {
+.button-global {
   background: #9ACD32;
   color: #fff;
   border: 0;
@@ -27,17 +27,13 @@
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
-.navbar .page-title {
-  color: #9ACD32;
-}
-.navbar h1 {
+.navbar .page-title h1 {
   color: #9ACD32;
 }
 .navbar .links {
   margin-left: auto;
 }
 .navbar a {
-  /* margin-left: 16px; */
   text-decoration: none;
   text-align: center;
   padding: 14px 16px;  

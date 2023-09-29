@@ -11,7 +11,7 @@ const Counter = () => {
     return ( 
         <div>
             <p>You have clicked: {counter} times</p>
-            <button className="global-button" onClick={handleClick}>click here</button>
+            <button className="button-global" onClick={handleClick}>click here</button>
         </div>
      );
 }
