@@ -12,6 +12,7 @@ const Navbar = () => {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
+                        <Link to="/bmicalculator">BMI Calculator</Link>
                         <Link to="/counter">Simple Counter</Link>
                     </div>
                 </div>
@@ -21,7 +22,7 @@ const Navbar = () => {
                     </button>
                     <div className="dropdown-content">
                         <Link to="/blogspage">Blogs Page</Link>
-                        <Link to="/create">New Blog</Link>
+                        <Link to="/create">Create New Blog</Link>
                     </div>
                 </div>
                 <Link to="/about">About</Link>

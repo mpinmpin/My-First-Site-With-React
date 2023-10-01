@@ -7,6 +7,7 @@ import NotFound from './NotFound';
 import About from './About';
 import BlogsPage from './BlogsPage';
 import Counter from './Counter';
+import BMICalculator from './BMICalculator';
 
 function App() {
   
@@ -18,6 +19,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home/>
+            </Route>
+            <Route path="/bmicalculator">
+              <BMICalculator/>
             </Route>
             <Route path="/counter">
               <Counter/>

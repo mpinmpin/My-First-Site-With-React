@@ -85,6 +85,38 @@
   cursor: pointer;
 }
 
+/* BMIcalculator */
+.bmi {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bmi label {
+  text-align: left;
+  display: block;
+}
+.bmi h2 {
+  font-size: 20px;
+  color: #9ACD32;
+  margin-bottom: 30px;
+}
+.bmi input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.bmi button {
+  background: #9ACD32;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
 /* create new blog form */
 .create {
   max-width: 400px;
