@@ -9,7 +9,7 @@ const Counter = () => {
     }
 
     return ( 
-        <div>
+        <div className="counter">
             <p>You have clicked: {counter} times</p>
             <button className="button-global" onClick={handleClick}>click here</button>
         </div>

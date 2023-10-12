@@ -8,7 +8,7 @@ const BlogsPage = () => {
   
   
     return (
-      <div className="blogs-page">
+      <div>
         {error && <div>{ error }</div> }
         {isPending && <div>Page is Loading...</div>}
         {blogs && <Bloglist blogs={blogs} title = 'All your blogs'/>} 

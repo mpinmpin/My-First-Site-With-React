@@ -4,13 +4,21 @@ const BMICalculator = () => {
     const [height, setHeight] = useState('');
     const [weight, setWeight] = useState('');
     const [bmi, setBMI] = useState(null);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const calculateBMI = () => {
+        if (!weight || !height) {
+            setErrorMessage('Please input your height and weight.');
+            setBMI(null);
+            return;
+          }
+
         const weightInPounds = parseFloat(weight);
         const heightInInches = parseFloat(height / 100);
         const calculatedBMI = (weightInPounds / (heightInInches * heightInInches));
         
         setBMI(calculatedBMI.toFixed(2));
+        setErrorMessage('');
     };
 
     return ( 
@@ -32,7 +40,8 @@ const BMICalculator = () => {
                 onChange={(e) => setHeight(e.target.value)}
                 />
                 </div>
-            <button onClick={calculateBMI}>Calculate BMI</button>
+            <button className='button-global' onClick={calculateBMI}>Calculate BMI</button>
+            {errorMessage && <p>{errorMessage}</p>}
             {bmi && <p>Your BMI is: {bmi}</p>}
         </div>
      );

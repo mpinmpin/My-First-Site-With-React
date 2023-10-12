@@ -40,8 +40,11 @@ const BlogDetails = () => {
                 <article>
                     <h2>{ blog.title }</h2>
                     <p>Written by { blog.author }</p>
-                    <div>{ blog.body }</div>
-                    <button onClick={handleClick}>delete blog</button>
+                    <div className='blog-paragraph'>{ blog.body }</div>
+                    <button 
+                      className='button-global' 
+                      onClick={handleClick}>delete blog
+                    </button>
                 </article>
             )}
         </div>

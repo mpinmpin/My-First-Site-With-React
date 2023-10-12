@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
     return ( 
@@ -7,6 +8,9 @@ const Navbar = () => {
                 <Link to="/"><h1>My First Site</h1></Link>
             </div>           
             <div className="links">
+                {/* <div>
+                    <ThemeToggle />
+                </div> */}
                 <div className="dropdown">
                     <button class="dropbtn">Simple Apps
                         <i class="fa fa-caret-down"></i>
