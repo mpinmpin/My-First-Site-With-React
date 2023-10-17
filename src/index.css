@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-
+:root {
+  --limegreen: rgb(175, 235, 56);
+  --darklimegreen: rgb(127, 175, 31);
+  --white: #ffffff; 
+  --black: rgb(31, 36, 43);
+}
 
 /* base styles */
 * {
@@ -9,22 +14,11 @@
   color: rgb(255, 255, 255);
   background-color: rgb(31, 36, 43);
 }
-:root {
-  --bg-color: #ffffff; /* Light mode background color */
-  --text-color: rgb(31, 36, 43);; /* Light mode text color */
-}
 
-.dark-mode {
-  --bg-color: rgb(31, 36, 43);; /* Dark mode background color */
-  --text-color: #ffffff; /* Dark mode text color */
-}
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
 .button-global {
-  background: #9ACD32;
-  color: #fff;
+  background: var(--limegreen);
+  color: var(--black);
+  font-weight: bold;
   border: 0;
   padding: 8px;
   border-radius: 8px;
@@ -33,10 +27,11 @@ body {
   margin-bottom: 8px;
 }
 .button-global:hover {
-  background:rgb(127, 175, 31);
+  background:var(--darklimegreen);
+  color: var(--white);
 }
 .button-global:active {
-  background:rgb(175, 235, 56);
+  background:var(--limegreen);
 }
 .navbar {
   padding: 20px;
@@ -48,10 +43,10 @@ body {
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar .page-title h1 {
-  color: #9ACD32;
+  color: var(--limegreen);
 }
 .navbar .page-title h1:hover {
-  color: rgb(127, 175, 31);
+  color: var(--darklimegreen);
 }
 .navbar .links {
   margin-left: auto;
@@ -64,7 +59,7 @@ body {
   /* THE PROBLEM SOLVER OF SHIFTING MENUS*/
 }
 .navbar a:hover {
-  color: #9ACD32;
+  color: var(--limegreen);
 }
 .content {
   max-width: 1000px;

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
     return ( 
@@ -8,12 +7,9 @@ const Navbar = () => {
                 <Link to="/"><h1>My First Site</h1></Link>
             </div>           
             <div className="links">
-                {/* <div>
-                    <ThemeToggle />
-                </div> */}
                 <div className="dropdown">
-                    <button class="dropbtn">Simple Apps
-                        <i class="fa fa-caret-down"></i>
+                    <button className="dropbtn">Simple Apps
+                        <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
                         <Link to="/bmicalculator">BMI Calculator</Link>
@@ -21,15 +17,17 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="dropdown">
-                    <button class="dropbtn">Blogs
-                        <i class="fa fa-caret-down"></i>
+                    <button className="dropbtn">Blogs
+                        <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
                         <Link to="/blogspage">Blogs Page</Link>
                         <Link to="/create">Create New Blog</Link>
                     </div>
                 </div>
-                <Link to="/about">About</Link>
+                <div className="dropdown">
+                    <Link to="/about">About</Link>
+                </div>
             </div>
         </nav>
      );
