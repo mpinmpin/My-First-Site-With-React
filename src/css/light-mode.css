@@ -11,13 +11,13 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: rgb(255, 255, 255);
-  background-color: rgb(31, 36, 43);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .button-global {
-  background: var(--limegreen);
-  color: var(--black);
+  background: var(--darklimegreen);
+  color: var(--white);
   font-weight: bold;
   border: 0;
   padding: 8px;
@@ -27,11 +27,10 @@
   margin-bottom: 8px;
 }
 .button-global:hover {
-  background:var(--darklimegreen);
-  color: var(--white);
+  background:var(--limegreen);
 }
 .button-global:active {
-  background:var(--limegreen);
+  background:var(--darklimegreen);
 }
 .navbar {
   padding: 20px;
@@ -40,13 +39,13 @@
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--black);
 }
 .navbar .page-title h1 {
-  color: var(--limegreen);
+  color: var(--darklimegreen);
 }
 .navbar .page-title h1:hover {
-  color: var(--darklimegreen);
+  color: var(--limegreen);
 }
 .navbar .links {
   margin-left: auto;
@@ -59,7 +58,7 @@
   /* THE PROBLEM SOLVER OF SHIFTING MENUS*/
 }
 .navbar a:hover {
-  color: var(--limegreen);
+  color: var(--darklimegreen);
 }
 .content {
   max-width: 1000px;
@@ -115,7 +114,7 @@
 }
 .bmi h2 {
   font-size: 20px;
-  color: #9ACD32;
+  color: var(--darklimegreen);
   margin-bottom: 30px;
 }
 .bmi input {
@@ -176,7 +175,7 @@
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: var(--black);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -189,14 +188,14 @@
   position: absolute;
   /* background-color: #9ACD32; */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgb(212, 214, 218);
   /* z-index: 1; */
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: white;
+  color: var(--black);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -205,7 +204,7 @@
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: rgb(31, 36, 43);
+  background-color: var(--white);
 }
 
 /* Show the dropdown menu on hover */
