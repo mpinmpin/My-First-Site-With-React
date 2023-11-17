@@ -9,6 +9,7 @@ const Navbar = () => {
         import(`./css/${mode}`) 
           .then(() => {
             console.log(`Successfully imported ${mode}`);
+            console.log('isDarkMode is ' + isDarkMode);
           })
           .catch((error) => {
             console.error('Error importing CSS file:', error);
@@ -17,6 +18,7 @@ const Navbar = () => {
 
     const toggleMode = () => {
         setIsDarkMode((prevMode) => !prevMode);
+        
     };
 
     return ( 
