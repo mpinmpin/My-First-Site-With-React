@@ -1,36 +1,6 @@
-// import React, { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
-// import './css/light-mode.css'
-// import './css/dark-mode.css'
-// import './css/light-mode.css'
 
 const Navbar = () => {
-    // const [isDarkMode, setIsDarkMode] = useState(false);
-
-    // useEffect(() => {
-    //     (async () => {
-    //         const mode = isDarkMode ? 'dark-mode.css' : 'light-mode.css';
-    //         try {
-    //             const module = await import(`./css/${mode}`);
-    //             console.log(`Successfully imported ${mode}`);
-    //             console.log('isDarkMode is ' + isDarkMode);
-    //         } catch (error) {
-    //             console.error('Error importing CSS file:', error);
-    //         }
-    //     })();
-    // }, [isDarkMode]);
-    
-    // useEffect(() => {
-    //     const mode = isDarkMode ? 'dark-mode.css' : 'light-mode.css';
-    //     import(`./css/${mode}`) 
-    //       .then(() => {
-    //         console.log(`Successfully imported ${mode}`);
-    //         console.log('isDarkMode is ' + isDarkMode);
-    //       })
-    //       .catch((error) => {
-    //         console.error('Error importing CSS file:', error);
-    //       });
-    // }, [isDarkMode]);
 
     const toggleMode = () => {
         const theme = document.getElementById('theme');
@@ -67,6 +37,7 @@ const Navbar = () => {
                     <button className="dropbtn">Simple Apps
                     </button>
                     <div className="dropdown-content">
+                        <Link to="/calculator">Calculator</Link>
                         <Link to="/bmicalculator">BMI Calculator</Link>
                         <Link to="/counter">Simple Counter</Link>
                     </div>
@@ -84,7 +55,7 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown">
                     <button className='button-global' onClick={toggleMode}>
-                        {/* {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'} */}Light/Dark mode
+                        Light/Dark mode
                     </button>
                 </div>
             </div>

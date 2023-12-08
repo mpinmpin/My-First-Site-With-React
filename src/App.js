@@ -8,6 +8,8 @@ import About from './About';
 import BlogsPage from './BlogsPage';
 import Counter from './Counter';
 import BMICalculator from './BMICalculator';
+import Calculator from './Calculator';
+
 
 function App() {
   
@@ -20,6 +22,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home/>
+            </Route>
+            <Route path="/calculator">
+              <Calculator/>
             </Route>
             <Route path="/bmicalculator">
               <BMICalculator/>
@@ -55,5 +60,3 @@ export default App;
 // Is Switch available in react router dom v6?
 // In React Router version 6, the <Switch> component has been deprecated and replaced with the <Routes> component. 
 
-// viewing in the browser: npm start
-  // viewing json data in browser: npx json-server --watch data/db.json --port 8000

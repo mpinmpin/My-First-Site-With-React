@@ -1,0 +1,4 @@
+steps: 
+
+viewing json data in browser: npx json-server --watch data/db.json --port 8000
+viewing in the browser: npm start
